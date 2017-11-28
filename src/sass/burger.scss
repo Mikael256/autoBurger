@@ -1,0 +1,397 @@
+.autoBurger
+{
+  position: relative;
+
+  width: 2rem;
+  height: 2rem;
+  border-radius: .2rem;
+  border: 1px solid white;
+
+  cursor: pointer;
+
+  &.roundBurger{
+    border-radius: 50%;
+  }
+}
+.burgerBar{
+  position: absolute;
+  height: 1px;
+  width: 60%;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+
+  transition: 0.3s all ease-in-out;
+
+  visibility: visible;
+  opacity: 1;
+}
+
+.burgerBar-hi
+{
+  top: 30%;
+}
+.burgerBar-md
+{
+  top: 50%;
+
+}
+.burgerBar-lo
+{
+  top: 70%;
+}
+
+
+.cross
+{
+  .burgerBar-hi
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0;
+  }
+  .burgerBar-lo
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+/////////// Base Arrow ///////////
+
+.arrowDown
+{
+  .burgerBar-hi
+  {
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0;
+  }
+  .burgerBar-lo
+  {
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.arrowUp
+{
+  .burgerBar-hi
+  {
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  .burgerBar-md
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0;
+  }
+  .burgerBar-lo
+  {
+    top: 50%;
+    left: 70%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+.arrowRight
+{
+  .burgerBar-hi
+  {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0;
+  }
+  .burgerBar-lo
+  {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.arrowLeft
+{
+  .burgerBar-hi
+  {
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    top: 50%;
+    transform: translateX(-50%) rotate(360deg);
+    opacity: 0;
+  }
+  .burgerBar-lo
+  {
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+/////////// Dashed Arrow ///////////
+
+.dashedArrowDown
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 60%;
+    left: 38%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    width: 40%;
+    top: 48%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 60%;
+    left: 62%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.dashedArrowUp
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 40%;
+    left: 38%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  .burgerBar-md
+  {
+    width: 40%;
+    top: 52%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 40%;
+    left: 62%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+.dashedArrowRight
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 38%;
+    left: 60%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    width: 40%;
+    top: 50%;
+    left: 48%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 62%;
+    left: 60%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.dashedArrowLeft
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 38%;
+    left: 40%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  .burgerBar-md
+  {
+    width: 40%;
+    top: 50%;
+    left: 52%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 62%;
+    left: 40%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+
+/////////// Triangle Arrow ///////////
+
+.triangleArrowDown
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    width: 50%;
+    top: 38%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.triangleArrowUp
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  .burgerBar-md
+  {
+    width: 50%;
+    top: 64%;
+    transform: translateX(-50%) rotate(0deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+.triangleArrowRight
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+  .burgerBar-md
+  {
+    width: 50%;
+    top: 50%;
+    left: 38%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+}
+
+.triangleArrowLeft
+{
+  .burgerBar-hi
+  {
+    width: 40%;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%) rotate(-45deg);
+  }
+  .burgerBar-md
+  {
+    width: 50%;
+    top: 50%;
+    left: 62%;
+    transform: translateX(-50%) rotate(90deg);
+  }
+  .burgerBar-lo
+  {
+    width: 40%;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
+
+.minus
+{
+  .burgerBar-hi
+  {
+    transform: translateX(-50%) rotate(0deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+  .burgerBar-md
+  {
+    transform: translateX(-50%) rotate(0deg);
+    width: 50%;
+  }
+  .burgerBar-lo
+  {
+    transform: translateX(-50%) rotate(0deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+
+.plus
+{
+  .burgerBar-hi
+  {
+    transform: translateX(-50%) rotate(90deg);
+    top: 50%;
+    width: 50%;
+  }
+  .burgerBar-md
+  {
+    transform: translateX(-50%) rotate(0deg);
+    width: 50%;
+  }
+  .burgerBar-lo
+  {
+    transform: translateX(-50%) rotate(0deg);
+    visibility: hidden;
+    opacity: 0;
+  }
+}
