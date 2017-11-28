@@ -8,7 +8,7 @@ automatic burger plugin in jQuery made by Mikaël Van Isterdael and Waïl Madran
   <link rel="stylesheet" href="css/autoBurger.min.css">
 -add this line at the end of your body after your jQuery script insertion:
   <script src="js/autoBurger.min.js"></script>
-## Easy Method (no JS)
+## Easy Method no JS
 The easy method only works with data attributes and is activated with the attribute data-autoburger="true" on the body markup:
   <body data-autoburger="true">
 Now you can create as much burger as you want by just add this line by burger to display:
